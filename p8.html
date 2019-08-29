@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+
+</body>
+<script>
+    let array = [];
+    for ( let i = 0; i < 10; i ++){
+        array.push(prompt("Enter the numbers to fill the array (10 MAX): "));
+    }
+    //sort low to high
+    array.sort(function (a, b) {
+        return a - b;
+
+        //sort high to low
+        //return b - a;
+    })
+
+    document.write(array);
+</script>
+</html>

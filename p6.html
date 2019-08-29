@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+
+</body>
+<script>
+    let array = [];
+    for (let i = 0; i < 10; i++) {
+        array.push(prompt("Enter a number (10 total): "));
+    }
+    let numGuess = prompt('Enter your number ');
+    let checkNumber = false;
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (numGuess === array[i]) {
+            count = i;
+            checkNumber = true;
+        }
+
+    }
+    if (checkNumber) {
+
+        alert("Your number " + numGuess + " is in the array at position " + count);
+
+    } else {
+        alert(numGuess + " is not in the array");
+    }
+</script>
+</html>

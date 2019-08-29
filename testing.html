@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+
+</body>
+<script>
+    const orders = [500, 30, 99, 15, 233];
+    'Bad Loop Code'
+
+    // const total1 = 0;
+    // const withTax1 =[];
+    // const highValue1 = [];
+    // for (let i = 0; i < orders.length; i++){
+    //
+    //     //Reduce
+    //     total1 += orders[i];
+    //
+    //     //Map
+    //     withTax1.push(orders[i] * 1.1);
+    //
+    //     //Filter
+    //     if (orders[i] > 100){
+    //         highValue1.push(orders[i])
+    //     }
+    // }
+    'Good Loop Code'
+    //reduce
+    const  total = orders.reduce((acc, cur ) => acc + cur)
+    document.write((total)+ ("<br>"));
+    //Map
+    const withTax = orders.map(v => v * 1.1)
+        document.write(withTax);
+
+    //Filter
+    const  highValue = orders.filter(v => v > 100);
+    document.write(("<br>") + highValue);
+</script>
+
+</html>

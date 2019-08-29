@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        array.push(parseInt(prompt("Enter a number (10 total): ")));
+    }
+    let max = array[0]
+    for (let i = 0; i < array.length; i++) {
+
+        if (max < array[i]) {
+            index = i;
+            max = array[i];
+        }
+    }
+    document.write("The biggest num is: " + max + " at the position number " + index);
+
+</script>
+
+</body>
+</html>

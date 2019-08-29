@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+
+</body>
+<script>
+    let array = [];
+    for ( let i = 0; i < 10; i ++){
+        array.push(prompt("Enter a number (10 total): "));
+
+    }
+    const lowValue = array.filter ( v => v <0);
+    document.write("Numbers smaller than 0: " + lowValue);
+
+</script>
+</html>
